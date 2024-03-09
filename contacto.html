@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header>
+        <ul id="menu"></ul>
+        <img src="img/logoFHiC.png" alt="FHiC icone" />
+        <li><a href="index.html" title="Volver al inicio">Index</a></li>
+        <li><a href="nosotros.html" title="Más información sobre los miembros del grupo">Miembros</a></li>
+        <li><a href="project.html" title="Más información sobre el proyecto 
+            del grupo">Proyecto Web</a></li>
+        <li><a href="contacto.html" title="Para contactar con los miembros del grupo">Contacto</a></li>
+        </ul>
+    </header>
+    
+    <div id="main-contacto">
+        <h1>Contacto</h1>
+        <p>Si quieres saber los principios de diseño que hemos aplicado <a href="PrincipiosD.html">Principios</a>.</p>
+        <form action="/enviar-formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="opinion">Opinión</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otros">Otros</option>
+            </select><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; FHiC 23-24 - SelePrep</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+

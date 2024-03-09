@@ -1,0 +1,164 @@
+/* Formatos generales */
+html {
+    font-family: Verdana;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: white;
+}
+
+header>img {
+    border-radius: 50px;
+    border: 5px solid rgb(30, 131, 198);
+    padding: 0px;
+    width: 150px;
+}
+
+header>* {
+    font-family: 'Courier';
+    font-size: x-large;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+}
+
+/* Estilo para la página index */
+#main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+}
+
+#main>div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#miembros,
+#contacto,
+#proyecto {
+    flex-grow: 1;
+    border-radius: 25px;
+    border: 5px solid cornflowerblue;
+    padding: 10px;
+}
+
+#miembros,
+#contacto {
+    flex: 1;
+}
+
+#proyecto {
+    flex: 6;
+}
+#contacto > p{
+    text-align: justify;
+}
+
+#proyecto>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#intro,
+h2 {
+    text-align: center;
+}
+
+p,
+ul {
+    line-height: 1.5;
+}
+
+.memberIcone {
+    border-radius: 500px;
+    border: 5px solid rgb(30, 131, 198);
+    width: 100%;
+}
+
+.member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo para la página project*/
+#content {
+    min-height: calc(100vh - 40vh);
+}
+
+#content h2 {
+    text-align: left; /* Alinear hacia la izquierda */
+}
+
+/* Estilo para cada miembro del grupo */
+.member {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Ajusta los valores para más margen */
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Estilo para contacto.html*/
+  form {
+    width: 400px;
+    margin: 0; /* Elimina el margen para que esté completamente a la izquierda */
+    display: inline-block; /* Permite que el formulario sea en línea y esté alineado a la izquierda */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#main-contacto{
+    margin-left: 20px;
+    min-height: calc(100vh - 20vh);
+}
