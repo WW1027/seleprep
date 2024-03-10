@@ -11,4 +11,4 @@
 * En nuestro caso, el index ha salido de esta forma:
 <img alt="imagen de la página principal" src="./img/index_page_css.png">
 
-* Enlace de github pages: 
+* Enlace de github pages: https://ww1027.github.io/seleprep/
