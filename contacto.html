@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -16,31 +18,49 @@
             del grupo">Proyecto Web</a></li>
         <li><a href="contacto.html" title="Para contactar con los miembros del grupo">Contacto</a></li>
         </ul>
+        
     </header>
     
     <div id="main-contacto">
-        <h1>Contacto</h1>
-        <p>Si quieres saber los principios de diseño que hemos aplicado <a href="PrincipiosD.html">Principios</a>.</p>
-        <form action="/enviar-formulario.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
+        <h2>Contacto</h2>
+            <div class="row">
+                <div class="col">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+                    
+                    <form action="/enviar-formulario.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
 
-            <label for="motivo">Motivo del contacto:</label>
-            <select id="motivo" name="motivo" required>
-                <option value="opinion">Opinión</option>
-                <option value="sugerencia">Sugerencia</option>
-                <option value="otros">Otros</option>
-            </select><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+                        <label for="motivo">Motivo del contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="opinion">Opinión</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otros">Otros</option>
+                        </select><br>
 
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+
+        </div>
+        <div class="col">
+            <h3><FONT SIZE=5>Principios de Diseño</FONT></h3>
+
+            <p>En nuestro formulario de contacto, hemos aplicado varios principios de diseño para mejorar la experiencia del usuario y la apariencia general. Algunos de estos principios incluyen:</p>
+
+            <ul>
+                <li><strong>Simplicidad:</strong> Hemos mantenido el formulario simple y fácil de entender.</li>
+                <li><strong>Consistencia:</strong> Los elementos del formulario siguen un diseño consistente.</li>
+                <li><strong>Legibilidad:</strong> Se han utilizado fuentes y colores legibles para garantizar que sea fácilmente legible.</li>
+                <li><strong>Orden:</strong> Los elementos del formulario tienen un orden intuitivo.</li>
+            </ul>
+        </div>
     </div>
+</div>
 
     <footer>
         <p>Copyright &copy; FHiC 23-24 - SelePrep</p>
@@ -48,7 +68,6 @@
 
 </body>
 </html>
-
 
 
 
